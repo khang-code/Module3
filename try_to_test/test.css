@@ -1,0 +1,135 @@
+/* Main container */
+#main {
+  border: 1px solid green;
+  height: 80vh;
+  display: flex;
+}
+
+/* Sidebar */
+#sidebar {
+  width: 19%;
+  height: 100%;
+  background-color: #231B2E;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.sidebar-item {
+  margin: 15px 0;
+  cursor: pointer;
+}
+
+.sidebar-separator hr {
+  width: 80%;
+  border-color: #444;
+}
+
+/* Container */
+#container {
+  display: flex;
+  flex-direction: column;
+  width: 81%;
+  background-color: #341b4e;
+  color: white;
+}
+
+#containerTop {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  background-color: #2E1B34;
+}
+
+#containerBottom {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid green;
+  padding: 20px;
+  background-color: black;
+  color: white;
+}
+
+/* Top menu */
+#menu {
+  display: flex;
+  width: 100%;
+}
+
+#menuSearch {
+  display: flex;
+  width: 40%;
+  align-items: center;
+}
+
+#menuUserThings {
+  display: flex;
+  justify-content: flex-end;
+  width: 60%;
+}
+
+#menuUserThingsUpdate,
+#menuUserThingsDownload {
+  margin-right: 15px;
+}
+
+/* Footer Player Controls */
+#footer {
+  border: 1px solid purple;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+  color: white;
+  padding: 10px;
+}
+
+#footerLeft,
+#footerRight {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#footerMiddle {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.playerControls button {
+  background-color: #444;
+  color: white;
+  border: none;
+  padding: 10px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.playerControls button:hover {
+  background-color: #555;
+}
+
+/* Content */
+#content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#contentName {
+  width: 40%;
+}
+
+#contentContent {
+  width: 40%;
+}
+
+#contentTime {
+  width: 20%;
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Letter C Layout with Full-Width Bottom Box</title>
+  <style>
+    body {
+      margin: 0;
+      display: flex;
+      height: 100vh;
+      justify-content: center;
+      align-items: center;
+      background-color: #f4f4f4;
+    }
+    #container {
+      display: flex;
+      flex-direction: column;
+      height: 80%;
+      width: 80%;
+      border: 2px solid black; /* Border around the container */
+    }
+    #mainContent {
+      display: flex;
+      flex-direction: row;
+      flex-grow: 1;
+    }
+    /* Left box, spans entire height */
+    #leftBox {
+      background-color: #3498db;
+      width: 30%;
+      height: 100%;
+      border: 2px solid red; /* Border for the left box */
+    }
+    /* Right container for the top and middle boxes */
+    #rightContainer {
+      display: flex;
+      flex-direction: column;
+      width: 70%;
+      border-left: 2px solid black; /* Border separating left box from right container */
+    }
+    /* Top box (15% of main content height) */
+    #topBox {
+      background-color: #2ecc71;
+      height: 15%;
+      width: 100%;
+      border: 2px solid blue; /* Border for the top box */
+    }
+    /* Middle space containing 3 boxes */
+    #middleSpace {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 70%; /* Takes up 70% of the height */
+      padding: 0 10px; /* Add padding to the middle space */
+    }
+    .middleBox {
+      background-color: #f1c40f;
+      width: 30%;
+      height: 100%;
+      border: 2px solid black; /* Border for each middle box */
+    }
+    /* Bottom box (outside of the right container, spans full width) */
+    #bottomBox {
+      background-color: #e74c3c;
+      height: 15%;
+      width: 100%;
+      border: 2px solid green; /* Border for the bottom box */
+    }
+  </style>
+</head>
+<body>
+
+<div id="container">
+  <div id="mainContent">
+    <div id="leftBox"></div>
+    <div id="rightContainer">
+      <div id="topBox"></div>
+      <div id="middleSpace">
+        <div class="middleBox"></div> <!-- First middle box -->
+        <div class="middleBox"></div> <!-- Second middle box -->
+        <div class="middleBox"></div> <!-- Third middle box -->
+      </div>
+    </div>
+  </div>
+  <div id="bottomBox"></div> <!-- Full-width bottom box -->
+</div>
+
+</body>
+</html>
