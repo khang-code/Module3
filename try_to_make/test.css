@@ -1,0 +1,123 @@
+#main{
+  border: 1px solid green;
+  height: 80vh;
+  display: flex;
+  table-layout: fixed;
+}
+#menu{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 12%;
+}
+#menuSearch{
+  display: flex;
+  width: 40%;
+  /*border: 1px solid orange;*/
+}
+#menuUserThings{
+  display: flex;
+  width: 60%;
+  /*flex-direction: row;*/
+}
+#menuUserThingsUpdate{
+  display: flex;
+  width: 30%;
+  /*border: 1px solid red;*/
+}
+#menuUserThingsDownload{
+  display: flex;
+  width: 30%;
+  /*border: 1px solid green;*/
+}
+#menuUserThingsIcon{
+  display: flex;
+  width: 40%;
+}
+#IconSettings{
+  display: flex;
+  width: 50%;
+}
+#IconUser{
+  display: flex;
+  width: 50%;
+}
+#container {
+  display: flex;
+  flex-direction: column;
+  width: 81%;
+  border: 1px solid green;
+  background-color: #341b4e;
+  color: white;
+}
+#containerTop{
+  display: flex;
+  flex-direction: row;
+  border: 1px solid green;
+  color: white;
+}
+#containerBottom{
+  display: flex;
+  flex-direction: row;
+  border: 1px solid green;
+  color: white;
+}
+.middleBox{
+  display: flex;
+  align-items: center;
+  height: 80%;
+  padding: 0 5px;
+}
+#footer {
+  border: 1px solid purple;
+  height: 20vh;
+  width: 100%;
+  flex-direction: row;
+  display: flex;
+  background-color: black;
+  color: white;
+}
+#footerRight{
+  display:flex;
+  width:25%;
+  text-align: center;
+}
+#footerLeft{
+  display:flex;
+  width:25%;
+  text-align: center;
+}
+#footerMiddle{
+  display:flex;
+  width:50%;
+  text-align: center;
+}
+#sidebar{
+  width: 19%;
+  height: 100%;
+  background-color: #231B2E;
+  color: white;
+  text-align: center;
+  justify-content: space-between;
+  table-layout: fixed;
+}
+#content{
+  background-color: black;
+  flex-direction: row;
+  display: flex;
+}
+#contentName{
+  display: flex;
+  width: 35vw;
+  height: 77vh;
+}
+#contentContent{
+  display: flex;
+  width: 30vw;
+  height: 77vh;
+}
+#contentTime{
+  display: flex;
+  width: 15vw;
+  height: 77vh;
+}
